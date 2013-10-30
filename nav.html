@@ -11,61 +11,87 @@
 		<meta name="description" content="">
 		<meta name="author" content="Ruben Carreño Villalba">
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-
 		<link rel="stylesheet" type="text/css" href="css/nav.css" />
 		
 	</head>
 
 	<body>
-		<nav>
-			<ul id="level0">
-				<li class="item-level0 item-first item-selected">Home</li>
-				<li class="item-level0">Algorithms</li>
-				<li class="item-level0">Problems</li>
-				<li class="item-level0">Resource</li>
-				<li class="item-level0">
-					<span>Our techniques</span>
-					<ul class="level1">
-						<li class="item-level1 item-first">SMPSO</li>
-						<li class="item-level1">ABYSS</li>
-						<li class="item-level1">MOCELL</li>
-						<li class="item-level1">MOCHC</li>
-					</ul>
-				</li>
+		<header id="main-header">
+			<img src="img/jMetalLogo_trans.png" alt="jMetal" class="logo">
+			<ul>
+				<li><a><img src="img/fb.png" alt="Facebok"></a></li>
+				<li><a><img src="img/twitter.png" alt="Facebok"></a></li>
+				<li><a><img src="img/linkedin.png" alt="Facebok"></a></li>
 			</ul>
-		</nav>
-		<div>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-			<p>kjhgfdjkghfdkjghdkghjjkhgfd</p>
-		</div>
+		</header>
+		<article>
+			<nav>
+				<ul id="level0">
+					<li class="item-level0 item-first item-selected">Home</li>
+					<li class="item-level0">Algorithms</li>
+					<li class="item-level0">Problems</li>
+					<li class="item-level0">Resource</li>
+					<li class="item-level0">
+						<span>Our techniques</span>
+						<ul class="level1">
+							<li class="item-level1 item-first">SMPSO</li>
+							<li class="item-level1">ABYSS</li>
+							<li class="item-level1">MOCELL</li>
+							<li class="item-level1">MOCHC</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<section id="principal-section">
+				<header>
+					<h1 id="h1-principal"><span class="span-abyss">AbYSS</span>  Archive based hYbrid Scatter Search</h1>
+				</header>
+				<section>
+					<h1 class="h1-content">Description</h1>
+			    	<p class="p-content">
+						<b>AbYSS</b>  (Archive-based hYbrid Scatter Search) is an adaptation of the Scatter Search template to a multi-objective
+						algorithm. We refer it as an hybrid algorithm because it applies crossover and mutation operators, which are typical of genetic algorithms.
+					</p>
+						
+					<h1 class="h1-content">Main features</h1>
+					<ul class="ul-content">
+						<li>
+							An extern archive is used to store the non-dominated solutions found during the search process.
+						</li>
+						<li>
+							Archive density estimator: crowding distance
+						</li>
+						<li>
+							Solution combination method: Simulated Binary (SBX) crossover 
+						</li>
+						<li>
+							Improvement method: Polynomial mutation
+						</li>
+					</ul>
+					
+					<h1 class="h1-content">Scatter Search template</h1>
+					<img id="img-scatter" src="img/scatterSearchTemplate.png">
+					
+					<h1 class="h1-content">References</h1>
+					<ul class="ul-content">
+						<li>
+							A.J. Nebro, F. Luna, E. Alba, B. Dorronsoro, J.J. Durillo, A. Beham AbYSS: Adapting Scatter Search to Multiobjective Optimization. 
+							IEEE Transactions on Evolutionary Computation. Vol. 12, No. 4 (August 2008), pp. 439-457. <a href="http://dx.doi.org/10.1109/TEVC.2007.913109">DOI</a>
+							<a href="references/NLA08.bib">BIBTEX</a>						
+							<a href="http://scholar.google.es/citations?view_op=view_citation&hl=es&user=8lF5lBcAAAAJ&citation_for_view=8lF5lBcAAAAJ:d1gkVwhDpl0C">Cites</a> (Google Scholar)
+	
+						</li>
+					</ul>
+				
+				</section>
+			</section>
+			<aside>
+				<h2>Pseudo-code</h2>
+				<img src="img/abyss_code.png">
+			</aside>
+		</article>
+		<footer>
+			<span>RIATEC - 2013</span>
+		</footer>
 	</body>
 </html>
