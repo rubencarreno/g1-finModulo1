@@ -16,32 +16,115 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" type="text/css" href="css/nav.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body>
-		<div>
-			<header>
-				<h1>index</h1>
-				<h2>index2</h2>
-			</header>
+		<header id="main-header">
+			<img src="img/jMetalLogo_trans.png" alt="jMetal" class="logo">
+			<ul>
+				<li><a><img src="img/fb.png" alt="Facebok"></a></li>
+				<li><a><img src="img/twitter.png" alt="Facebok"></a></li>
+				<li><a><img src="img/linkedin.png" alt="Facebok"></a></li>
+			</ul>
+		</header>
+		<article>
 			<nav>
-				<p>
-					<a href="/">Home</a>
-				</p>
-				<p>
-					<a href="/contact">Contact</a>
-				</p>
+				<ul id="level0">
+					<li class="item-level0 item-first item-selected">Home</li>
+					<li class="item-level0">Algorithms</li>
+					<li class="item-level0">Problems</li>
+					<li class="item-level0">Resource</li>
+					<li class="item-level0">
+						<span>Our techniques</span>
+						<ul class="level1">
+							<li class="item-level1 item-first">SMPSO</li>
+							<li class="item-level1">ABYSS</li>
+							<li class="item-level1">MOCELL</li>
+							<li class="item-level1">MOCHC</li>
+						</ul>
+					</li>
+				</ul>
 			</nav>
+			<section id="principal-section">
+				<header>
+					<h1 id="h1-principal">Welcome to the <span class="span-abyss">jMetal</span>Web Site</h1>
+				</header>
+				<section class="section-unTercio">
+					<h1 class="h1-content">jMetal is ...</h1>
+					<p class="p-content">jMetal stands for Metaheuristic Algorithms in Java, and it is an object-oriented Java-based framework for multi-objective optimization with metaheuristics.</p>
+				</section>
+				<section class="section-unTercio">
+					<h1 class="h1-content">You can use it to ...</h1>
+					<p class="p-content">The object-oriented architecture of the framework and the included features allow you to: experiment with the provided classic and state-of-the-art techniques, develop your own algorithms, solve your optimization problems, integrate jMetal in other tools, etc.</p>
+				</section>
 
-			<div>
+				<section class="section-unTercio">
+					<h1 class="h1-content">Our motivation is ...</h1>
+					<p class="p-content">The motivation driving us is to provide the programs we use in our own works to the multi-objective optimization research community. We have made an effort in trying to produce an ease-to-use software, and we are continuously modifying and extending jMetal according to our needs and those suggested by people interested in using it.</p>
+				</section>
 
-			</div>
+				<section class="section-unTercio">
+					<h1 class="h1-content">Only multi-objective algorithms?</h1>
+					<p class="p-content">Developing single-objective versions of multi-objective algorithms is usually an easy task, so jMetal contains also single-objective genetic algorithms, evolution strategies, PSO, and DE.</p>
+				</section>
 
-			<footer>
-				<p>
-					&copy; Copyright  by Ruben Carreño Villalba, David &amp; Jose Luis
-				</p>
-			</footer>
-		</div>
+				<section class="section-unTercio">
+					<h1 class="h1-content">Summary of features</h1>
+					<ul class="ul-content">
+						<li>Portability: jMetal is written in Java</li>
+						<li>Implemented algoritms: NSGA-II, SPEA2, PAES, PESA-II, OMOPSO, MOCell, AbYSS, MOEA/D, Densea, CellDE, GDE3, FastPGA, IBEA, SMPSO, SMS-EMOA, dMOPSO, SMPSOhv</li>
+						<li>Included problems:
+							<ul class="ul-content">
+								<li>Problem families: ZDT, DTLZ, WFG, CEC2009, LZ09</li>
+								<li>Classical problems: Kursawe, Fonseca, Schaffer</li>
+								<li>Constrained problems: Srinivas, Tanaka, Osyczka2, Constr_Ex, Golinski, Water</li>
+								<li>Combinatorial problems: multi-objective TSP, multi-objective QAP</li>
+							</ul>
+						</li>
+						<li>Quality indicators: hypervolume, spread, generational distance, inverted generational distance, additive epsilon.</li>
+						<li>Variable representations: binary, real, binary-coded real, integer, permutation.</li>
+					</ul>
+				</section>
+
+				<section class="section-unTercio">
+					<h1 class="h1-content">References</h1>
+					
+					<ul class="ul-content">
+						<li>J.J. Durillo, A.J. Nebro jMetal: a Java Framework for Multi-Objective Optimization. Advances in Engineering Software 42 (2011) 760-771.
+							<ul class="ul-content">
+								<li>Cites (Google Scholar)</li>
+								<li>BIBTEX</li>
+							</ul>
+						</li>
+						<li>J.J. Durillo, A.J. Nebro, E. Alba. The jMetal Framework for Multi-Objective Optimization: Design and Architecture. CEC 2010, pp: 4138-4325. July 2010.
+							<ul class="ul-content">
+								<li>Cites (Google Scholar)</li>
+								<li>BIBTEX</li>
+							</ul>
+						</li>
+					</ul>
+
+
+				</section>
+
+				<section class="section-unTercio">
+					<h1 class="h1-content">Documentation</h1>
+					<ul class="ul-content">
+						<li>A.J. Nebro, J.J. Durillo (July 2013). jMetal 4.4 user manual</li>
+						<li>JavaDoc</li>
+					</ul>
+				</section>
+
+			</section>
+			<aside>
+				<h2>Pseudo-code</h2>
+				<img src="img/abyss_code.png">
+			</aside>
+		</article>
+		<footer>
+			<span>RIATEC - 2013</span>
+		</footer>
 	</body>
 </html>
