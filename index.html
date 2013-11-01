@@ -25,7 +25,7 @@
 			<img src="img/jMetalLogo_trans.png" alt="jMetal" class="logo">
 			
 		</header>
-		<article>
+		<div id="container">
 			<nav>
 				<ul id="level0">
 					<li class="item-level0 item-first item-selected"><a href="index.html">Home</a></li>
@@ -36,18 +36,18 @@
 						<span>Our techniques</span>
 						<ul class="level1">
 							<li class="item-level1 item-first"><a href="#">SMPSO</a></li>
-							<li class="item-level1"><a href="#">ABYSS</a></li>
+							<li class="item-level1"><a href="nav.html">ABYSS</a></li>
 							<li class="item-level1"><a href="#">MOCELL</a></li>
 							<li class="item-level1"><a href="#">MOCHC</a></li>
 						</ul>
 					</li>
 				</ul>
 			</nav>
-			<section id="principal-section">
-				<header>
+			<div id="principal-section">
+				<header id="headers">
 					<h1 id="h1-principal">Welcome to the <span class="span-abyss">jMetal</span>Web Site</h1>
 				</header>
-					<div class="mitad">
+					<article class="mitad">
 						<section class="section-unTercio">
 							<h1 class="h1-content">jMetal is ...</h1>
 							<p class="p-content">jMetal stands for Metaheuristic Algorithms in Java, and it is an object-oriented Java-based framework for multi-objective optimization with metaheuristics.</p>
@@ -56,20 +56,30 @@
 							<h1 class="h1-content">You can use it to ...</h1>
 							<p class="p-content">The object-oriented architecture of the framework and the included features allow you to: experiment with the provided classic and state-of-the-art techniques, develop your own algorithms, solve your optimization problems, integrate jMetal in other tools, etc.</p>
 						</section>
+					</article>
+					<div class="mitad">
+						<img src="img/cGACode.png">
+						<img src="img/MOCEllCode.png">
+					</div>
 
-						<section class="section-unTercio">
+					<div class="tercio">
+						<img src="img/jMetalLogo_trans.png" class="tercio">
+					</div>
+					<article class="dostercios">
+						<section class="tercio">
 							<h1 class="h1-content">Our motivation is ...</h1>
 							<p class="p-content">The motivation driving us is to provide the programs we use in our own works to the multi-objective optimization research community. We have made an effort in trying to produce an ease-to-use software, and we are continuously modifying and extending jMetal according to our needs and those suggested by people interested in using it.</p>
 						</section>
 
-						<section class="section-unTercio">
+						<section class="tercio">
 							<h1 class="h1-content">Only multi-objective algorithms?</h1>
 							<p class="p-content">Developing single-objective versions of multi-objective algorithms is usually an easy task, so jMetal contains also single-objective genetic algorithms, evolution strategies, PSO, and DE.</p>
 						</section>
-					</div>
+					</article>
 
-					<div class="mitad">	
-						<section class="section-unTercio">
+
+					<article class="cien">
+						<section class="tercio">
 							<h1 class="h1-content">Summary of features</h1>
 							<ul class="ul-content">
 								<li>Portability: jMetal is written in Java</li>
@@ -86,36 +96,51 @@
 								<li>Variable representations: binary, real, binary-coded real, integer, permutation.</li>
 							</ul>
 						</section>
-
-						<section class="section-unTercio">
-							<h1 class="h1-content">References</h1>
-							
-							<ul class="ul-content">
-								<li><p>J.J. Durillo, A.J. Nebro <a href="http://www.sciencedirect.com/science/article/pii/S0965997811001219">jMetal: a Java Framework for Multi-Objective Optimization</a>. Advances in Engineering Software 42 (2011) 760-771.</p>
-									<ul>
-										<li><a href="http://scholar.google.es/scholar?oi=bibs&hl=es&cites=8294467800448040809">Cites</a> (Google Scholar)</li>
-										<li><a href="http://jmetal.sourceforge.net/resources/DN2011.bib">BIBTEX</a></li>
-									</ul>
-								</li>
-								<li><p>J.J. Durillo, A.J. Nebro, E. Alba. The jMetal Framework for Multi-Objective Optimization: Design and Architecture. CEC 2010, pp: 4138-4325. July 2010.</p>
-									<ul>
-										<li><a href="http://scholar.google.es/scholar?oi=bibs&hl=es&cites=12235689288108740075">Cites</a> (Google Scholar)</li>
-										<li><a href="http://jmetal.sourceforge.net/resources/CEC2010.bib">BIBTEX</a></li>
-									</ul>
-								</li>
-							</ul>
+						<div class="tercio">
+						
+							<img src="img/cGA.png" class="tercio">
+						
+							<section class="tercio">
+								<h1 class="h1-content">Documentation</h1>
+								<ul class="ul-content">
+									<li>A.J. Nebro, J.J. Durillo (July 2013). <a href="http://jmetal.sourceforge.net/resources/jMetalUserManual44.pdf">jMetal 4.4 user manual</a></li>
+									<li><a href="http://jmetal.sourceforge.net/javadoc/index.html">JavaDoc</a></li>
+								</ul>
+							</section>
 					
-						</section>
+						</div>
+					
+							<section class="tercio">
+					
+								<h1 class="h1-content">References</h1>
+			
+								<ul class="ul-content">
+									<li><p>J.J. Durillo, A.J. Nebro <a href="http://www.sciencedirect.com/science/article/pii/S0965997811001219">jMetal: a Java Framework for Multi-Objective Optimization</a>. Advances in Engineering Software 42 (2011) 760-771.</p>
+	
+										<ul>
+											<li><a href="http://scholar.google.es/scholar?oi=bibs&hl=es&cites=8294467800448040809">Cites</a> (Google Scholar)</li>
+											<li><a href="http://jmetal.sourceforge.net/resources/DN2011.bib">BIBTEX</a></li>
+										</ul>
 
-						<section class="section-unTercio">
-							<h1 class="h1-content">Documentation</h1>
-							<ul class="ul-content">
-								<li>A.J. Nebro, J.J. Durillo (July 2013). <a href="http://jmetal.sourceforge.net/resources/jMetalUserManual44.pdf">jMetal 4.4 user manual</a></li>
-								<li><a href="http://jmetal.sourceforge.net/javadoc/index.html">JavaDoc</a></li>
-							</ul>
-						</section>
+									</li>
+
+									<li><p>J.J. Durillo, A.J. Nebro, E. Alba. The jMetal Framework for Multi-Objective Optimization: Design and Architecture. CEC 2010, pp: 4138-4325. July 2010.</p>
+										
+										<ul>
+											<li><a href="http://scholar.google.es/scholar?oi=bibs&hl=es&cites=12235689288108740075">Cites</a> (Google Scholar)</li>
+											<li><a href="http://jmetal.sourceforge.net/resources/CEC2010.bib">BIBTEX</a></li>
+										</ul>
+									</li>
+								</ul>
+							</section>
+
+					</article>
+
+						
 					</div>
 			</section>
+
+
 			<aside>
 
 				<h2>Download</h2>
@@ -170,11 +195,10 @@
 						<li><b>May 2013</b></li>
 						<li>Working in a new Web site</li>
 					</ul>
-
-			
-
 			</aside>
-		</article>
+		</div>
+
+		<div class="limpio"></div>
 		<footer>
 			<span>RIATEC - 2013</span>
 		</footer>

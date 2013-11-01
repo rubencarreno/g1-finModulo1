@@ -5,12 +5,54 @@
 }
 .mitad{
 	width: 350px;
+	padding: 0px;
 	padding-right: 10px;
 	float: left;
+	margin: 0px;
+}
+.tercio{
+	width: 240px;
+	padding: 0px;
+	padding-right: 10px;
+	float: left;
+	margin: 0px;
+}
+.dostercios{
+	width: 500px;
+	padding: 0px;
+	padding-right: 10px;
+	float: left;
+	margin: 0px;	
+}
+
+
+.cien{
+	width: 100%;
+	padding: 0px;
+	padding-right: 10px;
+	float: left;
+	margin: 0px;	
+}
+
+#container{
+	float:left;
+	width:100%;
+	margin-top:110px;
+	margin-bottom:10px;
+}
+
+.mitad img{
+	width: 350px;
+	
 }
 #principal-section{
 	
 	width:760px;
+}
+#headers{
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
 }
 
 nav a{
