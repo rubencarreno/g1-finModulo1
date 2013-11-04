@@ -1,45 +1,49 @@
 /* Aside: PONER ASIDE COMO LA PLANTILLA */
 
-aside{
-	float:left;
-	width:320px;
-	margin-left:10px;
-	background-color:#E9B64D;
+aside {
+	float: left;
+	width: 320px;
+	margin-left: 10px;
+	background-color: #E9B64D;
 }
 
-aside h2{
-	float:left;
-	margin:10px 0 10px 25px;
-	padding:5px 0;
-	width:270px;
-	text-align:center;
-	background-color:#191970;
-	color:white;
-	font-size:20px;
-	font-weight:bold;
-	border-radius:5px;
+aside h2 {
+	float: left;
+	margin: 10px 0 10px 25px;
+	padding: 5px 0;
+	width: 270px;
+	text-align: center;
+	background-color: #191970;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
 }
 
-aside img{
-	width:270px;
-	margin-bottom:10px;
-	margin-left:25px;
-	border-radius:3px;
+aside img {
+	width: 270px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	border-radius: 3px;
 }
 
-.section-unTercio{
+.span-bold {
+	font-weight: bold;
+}
+
+.section-unTercio {
 	width: 350px;
 	float: left;
 	margin: 5px;
 }
-.mitad{
+.mitad {
 	width: 49%;
 	padding: 0px;
 	padding-right: 5px;
 	float: left;
 	margin: 0px;
 }
-.tercio{
+.tercio {
 	width: 32%;
 	padding: 0px;
 	padding-right: 5px;
@@ -47,130 +51,174 @@ aside img{
 	margin: 0px;
 }
 
-img{
+.tercio#img-left {
+	padding-top: 10px;
+}
+
+.tercio_2 {
+	width: 45%;
+	padding: 0px;
+	padding-right: 5px;
+	float: left;
+	margin: 0px;
+}
+
+img {
 	width: 100%;
 }
 
-
-
-.dostercios{
+.dostercios {
 	width: 66%;
 	padding: 5px;
 	padding-right: 5px;
 	float: left;
 	margin: 0px;
-	padding-left: 10px;	
+	padding-left: 10px;
 }
 
-.cien{
+.dostercios_2 {
+	width: 66%;
+	padding: 5px;
+	padding-right: 5px;
+	float: left;
+	margin: 0px;
+	padding-left: 10px;
+	padding-bottom: 55px;
+}
+
+.cien {
 	width: 100%;
 	padding: 0px;
 	padding-right: 10px;
 	float: left;
-	margin: 0px;	
+	margin: 0px;
 }
 
-#container{
-	float:left;
-	width:100%;
-	margin-top:110px;
-	margin-bottom:10px;
+#container {
+	float: left;
+	width: 100%;
+	margin-top: 110px;
+	margin-bottom: 10px;
 }
 
-#principal-section{
-	
-	width:1050px;
+#principal-section {
+
+	width: 1050px;
 }
-#headers{
+#headers {
 	height: 50px;
 	margin: 0px;
 	padding: 0px;
 }
 
-nav a{
+nav a {
 	font-weight: bold;
 	text-decoration: none;
 	color: white;
 }
 
-nav a:hover{
+nav a:hover {
 	font-weight: bold;
 	text-decoration: none;
 	color: #E3E2C1;
 }
 
-a{
+a {
 	font-weight: bold;
 	text-decoration: none;
 	color: #2C7DA5;
 }
-a:hover{
+a:hover {
 	font-weight: bold;
 	text-decoration: none;
 	color: #16445B;
 }
-aside{
+aside {
 	border-radius: 5px;
 	width: 360px;
 }
-aside h2{
-	float:left;
-	margin:10px 0 10px 25px;
+aside h2 {
+	float: left;
+	margin: 10px 0 10px 25px;
 	background-color: inherit;
-	padding:5px 0;
-	width:320px;
-	text-align:left;
-	color:white;
-	font-size:1.4em;
-	font-weight:bolder;
-}
-
-aside h3{
-	clear: both;
-	width:100%;
-	text-align:center;
-	background-color:#191970;
-	color:white;
-	font-size:1.2em;
+	padding: 5px 0;
+	width: 320px;
+	text-align: left;
+	color: white;
+	font-size: 1.4em;
 	font-weight: bolder;
 }
 
-.listaAside{
+aside h3 {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	background-color: #191970;
+	color: white;
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.asideImg{
+	margin-top: 25px;
+}
+
+.listaAside {
 	text-decoration: none;
 	list-style-type: none;
 	margin-left: -10px;
 }
 
+.listaAside_2 {
+	text-decoration: none;
+	list-style-type: none;
+	margin-left: -10px;
+	padding-top: 5px;
+}
 
-.limpio{
+.expand {
+	/*	width: 313px;*/
+	transition: transform .25s ease;
+}
+
+.expand:hover {
+	transform: translate(-9em, 4em) scale(2);
+}
+
+.limpio {
 	clear: both;
 }
 
-.rojo a{
+.rojo a {
 	color: #FF1400;
 }
 
-.rojo a:hover{
+.rojo a:hover {
 	color: #850A00;
 }
 .paddinglados {
 	width: 300px;
 }
-#icon_lpg{
+#icon_lpg {
 	width: 100px;
 	margin-left: 50px;
 }
 
-#social{
+#social {
 	width: 320px;
 	margin: 0 auto;
 }
 
-#social div{
+#social div {
 	margin-left: 5px;
 }
 
-#sourceLogo{
+#sourceLogo {
 	width: 150px;
+	transform: rotate(7deg);
+	transition: transform .25s ease;
 }
 
+#sourceLogo:hover {
+	transform: scale(1.70) ;
+}

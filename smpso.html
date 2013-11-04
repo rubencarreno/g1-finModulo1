@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>SMPSO</title>
+		<meta name="description" content="SMPSO web page">
+		<meta name="author" content="Jose Luis Barreche">
+
+		<link rel="shortcut icon" href="/favicon.ico">
+
+		<link rel="stylesheet" type="text/css" href="css/general.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<header id="main-header">
+			<img src="img/jMetalLogo_trans.png" alt="jMetal" class="logo">
+			<ul>
+				<li><a><img src="img/fb.png" href="https://www.facebook.com/jmetalframework" alt="Facebok"></a></li>
+				<li><a><img src="img/twitter.png" href="https://twitter.com/jmetalframework" alt="Facebok"></a></li>
+				<li><a><img src="img/linkedin.png" href="http://www.linkedin.com/groups/jMetal-User-Group-4441726?gid=4441726&trk=hb_side_g" alt="Facebok"></a></li>
+			</ul>
+
+		</header>
+		<div id="container">
+			<nav>
+				<ul id="level0">
+					<li class="item-level0 item-first"><a href="index.html">Home</a></li>
+					<li class="item-level0"><a href="#">Algorithms</a></li>
+					<li class="item-level0"><a href="#">Problems</a></li>
+					<li class="item-level0"><a href="#">Resource</a></li>
+					<li class="item-level0 item-selected">
+						<span>Our techniques</span>
+						<ul class="level1">
+							<li class="item-level1 item-first item-selected"><a href="smpso.html">SMPSO</a></li>
+							<li class="item-level1"><a href="abyss.html">ABYSS</a></li>
+							<li class="item-level1"><a href="#">MOCELL</a></li>
+							<li class="item-level1"><a href="#">MOCHC</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div id="principal-section">
+				<header id="headers">
+					<h1 id="h1-principal"><span class="span-jmetal">SMPSO</span> Speed-constrained Multiobjective PSO</h1>
+				</header>
+				<article class="dostercios">
+					<section>
+						<h1 class="h1-content">Description</h1>
+						<p class="p-content">
+							<span class="span-bold">SMPSO</span> (Speed constrained Multi-objective PSO) is a metaheuristic based on the OMOPSO algorithm (<a href="references/RC05.bib">BIBTEX</a>)
+							that was designed to cope with difficulties of this technique when solving multi-modal problems. The SMPSO approach is to apply a <span class="span-bold">constraint
+								velocity scheme</span> to control the so-called <span class="span-bold">swarm explosion</span>
+						</p>
+					</section>
+					<section>
+						<h1 class="h1-content">Main features</h1>
+						<ul>
+							<li>
+								Velocity constriction mechanism
+							</li>
+							<li>
+								External archive to store the non-dominated solutions
+								(leaders)
+								<ul>
+									<li>
+										Density estimator: crowding distance
+									</li>
+								</ul>
+							</li>
+							<li>
+								Leader selection: binary tournament from the leaders archive taking into account the crowding distance
+							</li>
+							<li>
+								Mutation (turbulence) operator: polynomial mutation
+							</li>
+
+						</ul>
+					</section>
+					<section>
+						<h1 class="h1-content">Variants</h1>
+						<p class="p-content">
+							The SMPSOhv variant, presented in CEC 2013, has the following features:
+						</p>
+
+						<ul>
+							<li>
+								Density estimator: hypervolume contribution
+							</li>
+							<li>
+								Leader selection: binary tournament from the leaders archive taking into account the hypervolume contribution
+							</li>
+						</ul>
+					</section>
+				</article>
+
+				<div class="tercio">
+					<h1 class="h1-content">Pseudo-code</h1>
+					<img class="expand" src="img/smpso_code.png" alt="pseudo-code">
+				</div>
+
+				<div class="limpio"></div>
+
+				<div class="tercio">
+					<img src="img/jMetalLogo_trans.png" alt="logo">
+				</div>
+
+				<aside class="dostercios_2">
+					<div class="mitad">
+
+						<h3>Swarm explosion control in SMPSO</h3>
+						<ul class="listaAside_2">
+							<li>
+								Behavior of a particle with OMOPSO (problem ZDT4)
+							</li>
+							<li>
+								<img class="asideImg expand" src="img/omopso.png" alt="omopso">
+							</li>
+						</ul>
+					</div>
+					<div class="mitad">
+						<h3>Swarm explosion control in SMPSO</h3>
+						<ul class="listaAside_2">
+							<li>
+								Behavior of a particle with SMPSO (problem ZDT4)
+							</li>
+							<li>
+								<img class="asideImg expand" src="img/smpso.png" alt="smpso">
+							</li>
+						</ul>
+					</div>
+				</aside>
+
+				<div class="tercio" id="img-left">
+					<img src="img/smpso_picture.png" alt="smpso_picture">
+				</div>
+
+				<article class="dostercios">
+					<section class="tercio_2">
+						<h2 class="h2-content">Leader management</h2>
+						<h1 class="h1-content">Leader selection</h1>
+						<ul class="ul-content">
+							<li>
+								SMPSO: the particles in the archive having larger crowding distance have more chances to be choosen as a leader
+							</li>
+							<li>
+								SMPSOhv: the particles in the archive contributing the most to the hypevolume have more chances to be choosen as a leader
+							</li>
+						</ul>
+						<h2 class="h2-content"></h2>
+						<h1 class="h1-content">Leader replacement</h1>
+						<ul class="ul-content">
+							<li>
+								SMPSO: the particle in the archive having the smallest crowding distance is removed
+							</li>
+							<li>
+								SMPSOhv: the particle in the archive contributing the least to the hypevolume is removed
+							</li>
+						</ul>
+					</section>
+					<section class="tercio_2">
+
+						<h1 class="h1-content">References</h1>
+
+						<ul class="ul-content">
+							<li>
+								<p>A.J. Nebro, J.J. Durillo, J. García-Nieto, C.A. Coello Coello, F. Luna and E. Alba. <a href="resources/MCDM2009.pdf">SMPSO: A New PSO-based Metaheuristic for Multi-objective Optimization.</a>
+								IEEE Symposium on Computational Intelligence in Multicriteria Decision-Making (MCDM 2009), pp: 66-73. March 2009. <a href="references/MCDM2009.bib">BIBTEX</a></p>
+							</li>
+
+							<li>
+								<p>J.J. Durillo, J. García-Nieto, A.J. Nebro, C.A. Coello Coello, F. Luna and E. Alba. <a href="resources/EMO2009a.pdf">Multi-Objective Particle Swarm Optimizers: An Experimental Comparison</a>.
+								5th International Conference, EMO 2009, pp: 495-509. April 2009. <a href="references/EMO2009a.bib">BIBTEX</a></p>
+							</li>
+							<li>
+								<p>J.J. Durillo, A.J. Nebro, C.A. Coello Coello, J. García-Nieto, F. Luna, E. Alba. A Study of Multi-Objective Metaheuristics when Solving Parameter Scalable Problems.
+								IEEE Transactions on Evolutionary Computation. Vol. 14, No. 4 (August 2010), pp. 618-635. <a href="resources/DNC10.bib">BIBTEX</a>
+								<a href="http://dx.doi.org/10.1109/TEVC.2009.2034647">DOI</a></p>
+							</li>
+							<li>
+								<p>A.J Nebro, J.J. Durillo, C.A. Coello Coello. Analysis of Leader Selection Strategies in a Multi-Objective Particle Swarm Optimizer.
+								2013 IEEE Congress on Evolutionary Computation. June 2013. <!--<a href="resources/DNC10.bib">BIBTEX</a>--></p>
+							</li>
+						</ul>
+					</section>
+				</article>
+			</div>
+		</div>
+
+		<div class="limpio"></div>
+		<footer>
+			<span>RIATEC - 2013</span>
+		</footer>
+	</body>
+</html>
