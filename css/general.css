@@ -44,7 +44,7 @@ header#main-header{
 
 nav{
 	float:left;
-	min-width:150px;
+	width:180px;
 	position:fixed;
 	margin-left:10px;
 }
@@ -94,7 +94,7 @@ nav .item-selected:hover{
 	display:none;
 	position:absolute;
 	margin-top:-29px;
-	margin-left:155px;
+	margin-left:169px;
 	list-style:none;
 	padding:0;
 }
